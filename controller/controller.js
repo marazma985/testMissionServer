@@ -23,6 +23,14 @@ const Contacts = sequelize.define("contacts", {
 
 class Controller {
 
+  async getTest(req, res) {
+    try {
+        res.json(123);
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }
   async getContacts(req, res) {
     try {
       Contacts.findAll({
