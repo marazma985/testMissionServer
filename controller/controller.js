@@ -1,7 +1,7 @@
 const sequelize = require('../bd.js');
 const Sequelize = require('sequelize');
 const bd = require('../models');
-const Contacts = bd.Contacts;
+const Contacts = bd.contacts;
 /*
 const Contacts = sequelize.define("contacts", {
   id: {
